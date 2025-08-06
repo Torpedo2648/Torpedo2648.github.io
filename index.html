@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yu Lei</title>
+  <meta name="description" lang="en" content="This is an academic website for Yu Lei">
+  <meta name="keywords" lang="en" content="Yu Lei">
+
+  <!-- Favicon and Stylesheets -->
+  <link rel="shortcut icon" href="images/avatar.jpeg">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/academicons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+  <!-- JavaScript -->
+  <script src="js/jquery-2.1.3.min.js"></script>
+
+  <!-- IE9 Support -->
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+  <![endif]-->
+
+  <!-- JavaScript Functions -->
+  <script type="text/javascript">
+    function ShowHide(divId, linkDivId) {
+      if (document.getElementById(divId).style.display == 'none') {
+        document.getElementById(divId).style.display = 'block';
+        document.getElementById(linkDivId).style.display = 'none';
+      } else {
+        document.getElementById(divId).style.display = 'none';
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="wrapper">
+      <nav class="site-nav">
+        <a href="#" class="menu-icon">
+          <svg viewBox="0 0 18 15">
+            <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+            <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+            <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+          </svg>
+        </a>
+
+        <div class="trigger">
+          <a class="page-link" href="#bio"><b>Biography</b></a>
+          <a class="page-link" href="#timeline"><b>Experiences</b></a>
+          <a class="page-link" href="#publications"><b>Publications</b></a>
+          <a class="page-link" href="#codebase"><b>Projects</b></a>
+          <a class="page-link" href="#awards"><b>Honors & Awards</b></a>
+          <a class="page-link" href="#academicservices"><b>Academic Services</b></a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Profile Section -->
+  <div id="profile-cover" class="cover shallow-bg img-responsive"> 
+    <div id="profile-namecard" class="profile-wrapper wrapper-light">
+      
+      <!-- Profile Picture -->
+      <div id="my-pic" class="profile-col profile-col-1">
+        <img id="profile-avatar" src="images/myself.jpg" alt="Me" class="circle-img border-dark">
+      </div>
+      
+      <!-- Contact Information -->
+      <div id="my-contact" class="profile-col profile-col-2">
+        <div id="my-name" class="text-grey-dark">Yu Lei<br></div>
+        <div id="my-title" class="text-grey">CS Ph.D. Student @ ICT, UCAS<br></div>
+        <div id="my-email" class="text-grey-light">leiyu2648 [at] gmail.com</div>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="social-media">
+        <a href="https://scholar.google.com/citations?user=MbpRPIQAAAAJ&hl=en" target="_blank" class="icon-button linkedin">
+          <i class="ai ai-google-scholar-square icon-linkedin"></i>
+          <span></span>
+        </a>
+
+        <a href="https://github.com/Torpedo2648" target="_blank" class="icon-button github">
+          <i class="fa fa-github icon-github"></i>
+          <span></span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/yu-lei-a92921378" target="_blank" class="icon-button linkedin">
+          <i class="fa fa-linkedin icon-linkedin"></i>
+          <span></span>
+        </a>
+
+        <a href="work/Resume_Yu_Lei.pdf" target="_blank" class="icon-button github">
+          <i class="ai ai-cv icon-github"></i>
+          <span></span>
+        </a>
+
+        <a href="mailto:leiyu2648@gmail.com" target="_blank" class="icon-button linkedin">
+          <i class="fa fa-envelope icon-linkedin"></i>
+          <span></span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="page-content">
+    <div class="wrapper">
+      
+      <!-- Biography Section - 使用统一的section-container类 -->
+      <div id="bio" class="section-container bio">
+        <h1 class="md-heading text-left">
+          <i class="fa fa-id-card" aria-hidden="true"></i>
+          About
+        </h1>
+        
+        <div class="bio-body">
+          <p>
+            Yu Lei (雷宇) is a first-year PhD student at the 
+            <a href="https://www.ict.ac.cn/" target="_blank">Institute of Computing Technology, Chinese Academy of Sciences</a>. 
+            I obtained my bachelor's degree in Artificial Intelligence from 
+            <a href="https://www.scu.edu.cn/" target="_blank">Sichuan University</a> in June 2025. 
+            In the early stages of my research, I was a research intern at 
+            <a href="https://github.com/Tele-AI" target="_blank">TeleAI, China Telecom</a>, focusing on developing safer and more personalized text-to-image models. 
+            During this period, I was fortunately advised by 
+            <a href="https://noyii.github.io/" target="_blank">Jinbin Bai</a> and 
+            <a href="https://openreview.net/profile?id=%7EKaidong_Yu1" target="_blank">Kaidong Yu</a>, and I received significant support from them. 
+            <!-- I'm always looking for related colaboration. If you are interested to chat with me, feel free to drop me an <a href="mailto:leiyu2648@gmail.com" target="_blank">email</a>. -->
+            <br>
+          </p>
+
+          <!-- Research Interests -->
+          <div style="width: 50%; float:left">
+            <h3>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <strong>Interests</strong>
+            </h3>
+            <ul>
+              <li><b>Controlable text-to-image models</b></li>
+              <a href="https://m-e-agi-lab.github.io/PSAlign/" target="_blank">[PSA]</a>
+            </ul>
+          </div>
+
+          <!-- Education -->
+          <div style="width: 50%; float: right">
+            <h3>
+              <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+              <strong>Education</strong>
+            </h3>
+
+            <!-- Education 1 -->
+            <div style="display: flex; align-items: center; margin-top: 10px;">
+              <img src="images/logo/logo_ict.png" alt="ICT Logo" style="width: 30px; height: auto; margin-right: 10px;">
+              <b>Institute of Computing Technology (Sep. 2025 - Now)</b>
+            </div>
+            <ul>
+              <li>Ph.D in Computer Science and Technology</li>
+              <li>Mentor: <a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/201711/t20171114_4894220.html" target="_blank">Prof. Liang Li</a></li>
+            </ul>
+
+            <!-- Education 2 -->
+            <div style="display: flex; align-items: center; margin-top: 10px;">
+              <img src="images/logo/logo_scu.png" alt="SCU Logo" style="width: 30px; height: auto; margin-right: 10px;">
+              <b>Sichuan University (Sep. 2021 - Jun. 2025)</b>
+            </div>
+            <ul>
+              <li>B.Eng in Artificial Intelligence</li>
+              <li>Mentor: <a href="https://cs.scu.edu.cn/info/1289/17442.htm" target="_blank">Prof. Lituan Wang</a></li>
+            </ul>
+          </div>
+
+      </div>
+
+      <!-- News Section - 使用统一的section-container类 -->
+      <!-- <div id="news" class="section-container bio">
+        <h1 class="md-heading text-left">
+          <i class="fa fa-tasks" aria-hidden="true"></i>
+          News
+        </h1>
+        
+        <ul>
+          <li class="indented" data-date="[Feb, 2024]">
+            Give a talk on <a href="https://arxiv.org/pdf/2402.03675.pdf">protein-protein interaction prediction</a> 
+            to <a href="https://jian-tang.com/students/">Jian Tang's group</a>. 
+            [<a href="files/ppiretrieval.pdf">Slide</a>]
+          </li>
+        </ul>
+      </div> -->
+
+      <!-- Experiences Timeline - 使用统一的section-container类 -->
+      <div id="timeline" class="section-container timeline-brief">
+        <h1 class="md-heading text-left">
+          <i class="fa fa-tasks" aria-hidden="true"></i>
+          Experiences
+        </h1>
+
+        <!-- TeleAI -->
+        <div class="timeline-item">
+          <div class="timeline-date">
+            <img class="social-icon" src="images/logo/logo_teleai.png"/>
+            Feb, 2025 - Aug, 2025
+          </div>
+          <div class="timeline-title">
+            Research Intern @ <a href="https://github.com/Tele-AI" target="_blank">TeleAI</a>
+          </div>
+          <div class="timeline-desc">
+            <div class="timeline-host">
+              Supervisor: 
+              <a href="https://noyii.github.io/" target="_blank">Dr. Jinbin Bai</a>, 
+              <a href="https://openreview.net/profile?id=%7EKaidong_Yu1" target="_blank">Dr. Kaidong Yu</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SCU -->
+        <div class="timeline-body">
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <img class="social-icon" src="images/logo/logo_scu.png"/>
+              Sep, 2022 - Aug, 2024
+            </div>
+            <div class="timeline-title">
+              Research Assistant @ <a href="http://www.machineilab.org/" target="_blank">MachineILab</a>
+            </div>
+            <div class="timeline-desc">
+              <div class="timeline-host">
+                Supervisor: 
+                <a href="http://www.machineilab.org/user/Lituan_Wang/index.html" target="_blank">Prof. Lituan Wang</a>, 
+                <a href="http://www.machineilab.org/user/Lei_Zhang/index.htm" target="_blank">Prof. Lei Zhang</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+      </div>
+
+      <!-- Publications Section - 使用统一的section-container类 -->
+      <div id="publications" class="section-container publications">
+        <h1 class="md-heading text-left">
+          <i class="fa fa-file" aria-hidden="true"></i>
+          Publications (
+          <button class="custom-button" id="show-selected-btn">Show Representative</button> / 
+          <button class="custom-button" id="show-all-btn">Show All</button>
+          )
+        </h1>
+
+        <div class="pub-list">
+          <!-- Publication Item -->
+          <div class="pub" data-selected="true">
+            <div class="pub-left">
+              <img class="intro-img frame" src="images/pub/pub_psa.png" alt="PSAlign">
+            </div>
+            
+            <div class="pub-right">
+              <div class="title">
+                Personalized Safety Alignment for Text-to-Image Diffusion Models
+              </div>
+              
+              <div class="authors">
+                <font style="font-size: 11pt;">
+                  <b>Yu Lei</b>, Jinbin Bai, Qingyu Shi, Aosong Feng, Kaidong Yu
+                </font>
+              </div>
+              
+              <div class="publish">
+                <span class="place">Arxiv 2025</span>
+              </div>
+              
+              <div class="tags">
+                [<a class="tag" href="https://arxiv.org/pdf/2508.01151" target="_blank">Paper</a>]
+                [<a class="tag" href="https://github.com/M-E-AGI-Lab/PSAlign" target="_blank">Code</a>]
+                [<a class="tag" href="https://m-e-agi-lab.github.io/PSAlign/" target="_blank">Project</a>]
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects/Github Section - 使用统一的section-container类 -->
+      <div id="codebase" class="section-container bio">
+        <h1 class="md-heading text-left">
+          <i class="fa fa-tasks" aria-hidden="true"></i>
+          Github
+        </h1>
+        
+        <div class="bio-body">
+          <div class="card-container">
+            <!-- GitHub Repository Card -->
+            <div class="github-card">
+              <div>
+                <a class="repo-link" href="https://github.com/M-E-AGI-Lab/PSAlign" target="_blank">
+                  M-E-AGI-Lab/<strong>PSAlign</strong>
+                </a>
+                <span class="label">Project</span>
+              </div>
+              
+              <div class="description">
+                PSAlign: Personalized Safety Alignment for Text-to-Image Diffusion Models.
+              </div>
+              
+              <div class="meta">
+                <div class="dot"></div>
+                <div>Python</div>
+                
+                <a href="https://github.com/M-E-AGI-Lab/PSAlign/stargazers" target="_blank">
+                  <svg fill="currentColor" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2 115.9 353.1c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z"></path>
+                  </svg>
+                  Star &nbsp; <span id="star-count">–</span>
+                </a>
+                
+                <a href="https://github.com/M-E-AGI-Lab/PSAlign/network/members" target="_blank">
+                  <svg fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 4a2 2 0 1 0-2.47 1.94V7a.48.48 0 0 1-.27.44L8.49 8.88l-2.76-1.4A.49.49 0 0 1 5.46 7V5.94a2 2 0 1 0-1 0V7a1.51 1.51 0 0 0 .82 1.34L8 9.74v1.32a2 2 0 1 0 1 0V9.74l2.7-1.36A1.49 1.49 0 0 0 12.52 7V5.92A2 2 0 0 0 14 4zM4 4a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm5.47 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM12 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path>
+                  </svg>
+                  Fork &nbsp; <span id="fork-count">–</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Awards Section - 使用统一的section-container类 -->
+      <div id="awards" class="section-container bio">
+        <h1 class="md-heading text-left">
+          <i class="fa fa-tasks" aria-hidden="true"></i>
+          Selected Honors & Awards
+        </h1>
+        
+        <ul>
+          <li>Outstanding Graduate · Sichuan University · 2024–2025</li>
+          <li>National Scholarship · Sichuan University · 2023–2024</li>
+          <li>Baogang Scholarship (Top 6 undergraduates) · Sichuan University · 2023–2024</li>
+          <li>First Prize, Global Final · Huawei ICT Competition · 2023–2024</li>
+        </ul>
+
+      </div>
+
+      <!-- Academic Services Section - 使用统一的section-container类 -->
+      <div id="academicservices" class="section-container bio">
+        <h1 class="md-heading text-left">
+          <i class="fa fa-tasks" aria-hidden="true"></i>
+          Academic Services
+        </h1>
+
+        <div class="bio-body">
+          <div class="reviewer-title">Conference Reviewer:</div>
+          <div class="reviewer-section">
+            <div class="reviewer-column">
+              The Association for the Advancement of Artificial Intelligence (AAAI)
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visitor Map -->
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <div style="max-width: 400px; width: 100%;">
+          <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=K9NLvpbM7GH1cTCvhvVlo4LW5p-d2mRZYw6UhrAFw0g&cl=ffffff&w=a"></script>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="wrapper">
+      <div class="footer-col-wrapper">
+        
+        <!-- Contact Information -->
+        <div class="footer-col footer-col-1">
+          <ul class="contact-list">
+            <li>Personal Email:</li>
+            <li><a href="mailto:leiyu2648@gmail.com">leiyu2648 [at] gmail.com</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-col footer-col-2">
+          <a href="https://scholar.google.com/citations?user=MbpRPIQAAAAJ&hl=en" target="_blank" class="icon-button github">
+            <i class="ai ai-google-scholar-square icon-github"></i>
+            <span></span>
+          </a>
+
+          <a href="https://github.com/Torpedo2648" target="_blank" class="icon-button github">
+            <i class="fa fa-github icon-github"></i>
+            <span></span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/yu-lei-a92921378/" target="_blank" class="icon-button linkedin">
+            <i class="fa fa-linkedin icon-linkedin"></i>
+            <span></span>
+          </a>
+
+          <a href="work/Resume_Yu_Lei.pdf" target="_blank" class="icon-button github">
+            <i class="ai ai-cv icon-github"></i>
+            <span></span>
+          </a>
+        </div>
+
+        <!-- Last Updated -->
+        <div class="footer-col footer-col-3">
+          <p class="text">
+            Last updated: Aug, 2025.<br>
+            This website's style borrows from <a href='https://cen-jun.com/' target="_blank">Jun CEN</a>.
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <div class="back-to-top">Top</div>
+
+  <!-- Custom Styles for indented list and academic services -->
+  <style>
+    /* Timeline List Styling */
+    li.indented {
+      position: relative;
+      padding-left: 90px;
+    }
+
+    li.indented::before {
+      content: attr(data-date);
+      position: absolute;
+      left: 0;
+      top: 0;
+      white-space: nowrap;
+    }
+
+    /* Academic Services Styling */
+    .reviewer-section {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+
+    .reviewer-column {
+      flex: 1 1 50%;
+      box-sizing: border-box;
+      padding-right: 20px;
+      font-size: 0.85em;
+      line-height: 1.6;
+      position: relative;
+      padding-left: 1em;
+      margin-bottom: 4px;
+    }
+
+    .reviewer-column::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      .reviewer-column {
+        flex: 1 1 100%;
+      }
+    }
+
+    .reviewer-title {
+      margin-top: 12px;
+      font-weight: bold;
+    }
+  </style>
+
+  <!-- JavaScript Functions -->
+  <script type="text/javascript">
+    // Publications Show/Hide Functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const showSelectedBtn = document.getElementById('show-selected-btn');
+      const showAllBtn = document.getElementById('show-all-btn');
+      const publications = document.querySelectorAll('.pub');
+
+      // Show Representative Publications
+      showSelectedBtn.addEventListener('click', function() {
+        publications.forEach(pub => {
+          if (pub.getAttribute('data-selected') === 'true') {
+            pub.style.display = 'block';
+          } else {
+            pub.style.display = 'none';
+          }
+        });
+      });
+
+      // Show All Publications
+      showAllBtn.addEventListener('click', function() {
+        publications.forEach(pub => {
+          pub.style.display = 'block';
+        });
+      });
+    });
+
+    // GitHub Stats Loading
+    const repos = [
+      { owner: "M-E-AGI-Lab", repo: "PSAlign", starId: "star-count", forkId: "fork-count" },
+    ];
+
+    async function loadGitHubStats() {
+      for (const { owner, repo, starId, forkId } of repos) {
+        try {
+          const res = await fetch(`https://api.github.com/repos/${owner}/${repo}`);
+          if (!res.ok) throw new Error("GitHub API error");
+          const data = await res.json();
+          document.getElementById(starId).innerText = data.stargazers_count ?? "–";
+          document.getElementById(forkId).innerText = data.forks_count ?? "–";
+        } catch (e) {
+          console.error(`Failed to load stats for ${owner}/${repo}`, e);
+          document.getElementById(starId).innerText = "–";
+          document.getElementById(forkId).innerText = "–";
+        }
+      }
+    }
+
+    // Load GitHub stats when page loads
+    document.addEventListener('DOMContentLoaded', loadGitHubStats);
+
+    // Back to Top Functionality
+    jQuery(document).ready(function() {
+      var offset = 220;
+      var duration = 500;
+      
+      jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+          jQuery('.back-to-top').fadeIn(duration);
+        } else {
+          jQuery('.back-to-top').fadeOut(duration);
+        }
+      });
+      
+      jQuery('.back-to-top').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+      });
+    });
+  </script>
+
+</body>
+</html>
